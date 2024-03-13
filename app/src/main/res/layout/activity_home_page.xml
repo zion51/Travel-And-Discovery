@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:orientation="vertical"
+    android:background="@color/lite"
+    tools:ignore="ExtraText">
+
+    // App name..
+
+    <RelativeLayout
+        android:id="@+id/appNameTop"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="-140dp"
+        android:background="@drawable/ciecleshape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/lite"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    // Home Page Scroll View..
+
+    <ScrollView
+        android:id="@+id/homeScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appNameTop"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/lite"
+            >
+
+            // Search Bar
+
+            <RelativeLayout
+                android:id="@+id/searchBar"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/searchshape"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:hint="Search Your Destination"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/baseline_arrow_forward_35"
+                    android:contentDescription="TODO" />
+
+            </RelativeLayout>
+
+            // Google Map
+
+            <RelativeLayout
+                android:id="@+id/googleMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchBar"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/gMapTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Location"
+                    android:textColor="@color/gre"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/frame_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/gMapTxt"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            // Recommendations
+
+            <TextView
+                android:id="@+id/recomTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/googleMap"
+                android:padding="10dp"
+                android:text="Recommendations"
+                android:textColor="@color/gre"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/recomScroll"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/recomTxt"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal"
+                    >
+                    // Place 1
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place1"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image1"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place1name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image1"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place1name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/fourstarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place1name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 2
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place2"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place2name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image2"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place2name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/fourstarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place2name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 3
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place3"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place3name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image3"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place3name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/threestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place3name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 4
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place4"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place4name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image4"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place4name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/threestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place4name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 5
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place5"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image5"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place5name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image5"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place5name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/twostarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place5name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 6
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place6"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image6"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place6name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image6"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place6name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/onestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place6name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            // Divisions
+
+            <TextView
+                android:id="@+id/divisionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recomScroll"
+                android:padding="10dp"
+                android:text="Divisions"
+                android:textColor="@color/gre"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/divisionScroll"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/divisionTxt"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal"
+                    >
+                    // DIVISION 1 chittagong
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/chiD1"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Dimage1"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/D1name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Dimage1"
+                                android:text="Chittagong"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingD1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/D1name"
+                                android:text="Tourist attractions : 200"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // DIVISION 2 sylhet
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sylD2"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Dimage2"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/D2name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Dimage2"
+                                android:text="Sylhet"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingD2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/D2name"
+                                android:text="Tourist attractions : 100"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // DIVISION 3 rangpur
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ranD3"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Dimage3"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/D3name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Dimage3"
+                                android:text="Rangpur"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingD3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/D3name"
+                                android:text="Tourist attractions : 100+"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // DIVISION 4 khulna
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/khuD4"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Dimage4"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/D4name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Dimage4"
+                                android:text="Khulna"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingD4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/D4name"
+                                android:text="Tourist attractions : 17"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // DIVISION 5 rajshahi
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/rajD5"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Dimage5"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/D5name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Dimage5"
+                                android:text="Rajshahi"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingD5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/D5name"
+                                android:text="Tourist attractions : 100"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // DIVISION 6 barisal
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/barD6"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Dimage6"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/D6name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Dimage6"
+                                android:text="Barisal"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingD6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/D6name"
+                                android:text="Tourist attractions : 100"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // DIVISION 7 dhaka
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dhaD7"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Dimage7"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/D7name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Dimage7"
+                                android:text="Dhaka"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingD7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/D7name"
+                                android:text="Tourist attractions : 200"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // DIVISION 8 mymensingh
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mymD8"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/Dimage8"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/D8name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Dimage8"
+                                android:text="Mymensingh"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingD8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/D8name"
+                                android:text="Tourist attractions : 50"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    // Navigation Bar
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menuitems"
+        app:itemIconTint="@color/gre"
+        app:itemIconSize="24dp"
+        android:background="@drawable/shape"
+        />
+
+
+
+
+</RelativeLayout>

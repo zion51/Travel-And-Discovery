@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage"
+    tools:ignore="ExtraText">
+
+    // App name..
+
+    <RelativeLayout
+        android:id="@+id/appNameTop"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="-140dp"
+        android:background="@drawable/ciecleshape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/lite"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appNameTop"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/puserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MR.XXXXX"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/puserName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Travel Completed : 07"
+        />
+
+
+
+    // Navigation Bar
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menuitems"
+        app:itemIconTint="@color/gre"
+        app:itemIconSize="24dp"
+        app:itemPaddingTop="10dp"
+        android:background="@drawable/shape"
+        />
+
+</RelativeLayout>
