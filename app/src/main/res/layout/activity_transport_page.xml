@@ -32,6 +32,1090 @@
             android:textStyle="bold" />
     </RelativeLayout>
 
+    <ScrollView
+        android:id="@+id/homeScroll"
+        android:layout_width="match_parent"
+        android:layout_height="575dp"
+        android:layout_below="@id/appNameTop"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/lite"
+            >
+
+            // bus
+
+            <TextView
+                android:id="@+id/busTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Bus"
+                android:textColor="@color/gre"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/busScroll"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/busTxt"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal"
+                    >
+                    // Place 1
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/b1"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/bi1"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/bplace1name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/bi1"
+                                android:text="Dhaka to Cox's Bazar"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/bprice1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/bplace1name"
+                                android:text="Price "
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 2
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/b2"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/bi2"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/bplace2name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/bi2"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/price2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/bplace2name"
+                                android:text="Price"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 3
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/b3"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/bi3"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/bplace3name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/bi3"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/Price3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/bplace3name"
+                                android:text="Price"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 4
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/b4"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/bi4"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/bplace4name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/bi4"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/Price4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/bplace4name"
+                                android:text="Price "
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            // train
+
+            <TextView
+                android:id="@+id/trainTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Train"
+                android:textColor="@color/gre"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/busScroll"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/trainScroll"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/trainTxt"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal"
+                    >
+                    // Place 1
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place1"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image1"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place1name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image1"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place1name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/fourstarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place1name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 2
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place2"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place2name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image2"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place2name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/fourstarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place2name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 3
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place3"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place3name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image3"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place3name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/threestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place3name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 4
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place4"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place4name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image4"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place4name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/threestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place4name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 5
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place5"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image5"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place5name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image5"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place5name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/twostarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place5name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 6
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place6"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image6"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place6name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image6"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place6name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/onestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place6name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            // Air
+
+            <TextView
+                android:id="@+id/airTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Air"
+                android:textColor="@color/gre"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/trainScroll"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/airScroll"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                tools:ignore="UselessParent"
+                android:layout_below="@id/airTxt"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal"
+                    >
+                    // Place 1
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place1"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image1"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place1name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image1"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place1name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/fourstarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place1name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 2
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place2"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place2name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image2"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place2name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/fourstarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place2name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 3
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place3"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place3name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image3"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place3name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/threestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place3name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 4
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place4"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place4name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image4"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place4name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/threestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place4name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 5
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place5"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image5"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place5name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image5"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place5name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/twostarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place5name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    // Place 6
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/place6"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="5dp"
+                        android:elevation="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/image6"
+                                android:layout_width="130dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/coxbazar"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerHorizontal="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/place6name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/image6"
+                                android:text="Cox's Bazar Sea Beach "
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                />
+                            <TextView
+                                android:id="@+id/ratingplace6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/place6name"
+                                android:text="Ratings"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gre"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="13dp"
+                                android:background="@drawable/onestarrating"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/place6name"
+                                android:layout_marginRight="25dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
 
     // Navigation Bar
 

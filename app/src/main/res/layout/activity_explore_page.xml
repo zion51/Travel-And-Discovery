@@ -31,12 +31,24 @@
     </RelativeLayout>
 
     <ImageView
+        android:id="@+id/webimg"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_below="@id/appNameTop"
         android:background="@drawable/travelshop"
         android:layout_margin="10dp"
         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/webimg"
+        android:text="Web site is not online yet."
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
 
 
 

@@ -36,7 +36,7 @@
     <ScrollView
         android:id="@+id/homeScroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="575dp"
         android:layout_below="@id/appNameTop"
         android:visibility="visible"
         >
@@ -1007,6 +1007,7 @@
         app:itemIconTint="@color/gre"
         app:itemIconSize="24dp"
         android:background="@drawable/shape"
+        android:layout_below="@+id/homeScroll"
         />
 
 
