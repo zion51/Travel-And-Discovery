@@ -231,7 +231,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@id/image2"
-                                android:text="Cox's Bazar Sea Beach "
+                                android:text="Ratergul"
                                 android:textSize="12sp"
                                 android:textStyle="bold"
                                 android:textColor="@color/gre"
