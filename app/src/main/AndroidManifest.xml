@@ -17,6 +17,9 @@
         android:theme="@style/Theme.TravelAndDiscovery"
         tools:targetApi="31">
         <activity
+            android:name=".places"
+            android:exported="false" />
+        <activity
             android:name=".ExplorePage"
             android:exported="false" />
         <activity

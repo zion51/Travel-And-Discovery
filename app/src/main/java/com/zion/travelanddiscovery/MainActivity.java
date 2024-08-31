@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // log in botoom to change Activity by verifying identity..
+        // log in bottom to change Activity by verifying identity..
 
         loginBottom.setOnClickListener(new View.OnClickListener() {
             @Override
