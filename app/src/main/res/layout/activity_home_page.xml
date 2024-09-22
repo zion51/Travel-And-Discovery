@@ -36,9 +36,10 @@
     <ScrollView
         android:id="@+id/homeScroll"
         android:layout_width="match_parent"
-        android:layout_height="575dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/appNameTop"
         android:visibility="visible"
+        android:layout_marginBottom="80dp"
         >
 
         <RelativeLayout
@@ -1001,7 +1002,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menuitems"
         app:itemIconTint="@color/gre"
